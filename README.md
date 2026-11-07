@@ -9,7 +9,7 @@ Ao abrir o aplicativo, informe:
 - URL do servidor Xtream (por exemplo, `https://servidor.exemplo.com:8080`);
 - usuário;
 - senha;
-- URL do EPG em XMLTV.
+- URL do EPG em XML/XMLTV, inclusive endereços terminados em `.xml`.
 
 Não há usuário, senha ou URL de API privada embutidos no código. A configuração pode ser salva apenas no dispositivo/navegador atual ou mantida somente durante a sessão.
 

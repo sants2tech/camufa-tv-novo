@@ -2003,11 +2003,11 @@ function ensureApiCredentials(){
       <input id="camufaApiUser" autocomplete="username" required style="width:100%;padding:12px;border-radius:8px;border:1px solid #394154;background:#080b12;color:#fff;margin-bottom:12px">
       <label style="display:block;font-size:.8rem;margin:0 0 5px">Senha</label>
       <input id="camufaApiPass" type="password" autocomplete="current-password" required style="width:100%;padding:12px;border-radius:8px;border:1px solid #394154;background:#080b12;color:#fff;margin-bottom:12px">
-      <label style="display:block;font-size:.8rem;margin:0 0 5px">URL do EPG (XMLTV)</label>
-      <input id="camufaEpgUrl" type="url" placeholder="https://.../epg.xml" value="${DEFAULT_EPG_XML_URL}" autocomplete="url" style="width:100%;padding:12px;border-radius:8px;border:1px solid #394154;background:#080b12;color:#fff;margin-bottom:14px">
+      <label style="display:block;font-size:.8rem;margin:0 0 5px">URL do EPG (XML/XMLTV)</label>
+      <input id="camufaEpgUrl" type="url" accept=".xml,application/xml,text/xml" placeholder="https://.../epg.xml" value="${DEFAULT_EPG_XML_URL}" autocomplete="url" style="width:100%;padding:12px;border-radius:8px;border:1px solid #394154;background:#080b12;color:#fff;margin-bottom:14px">
       <label style="display:flex;gap:8px;align-items:center;color:#aab2c2;font-size:.75rem;margin-bottom:16px"><input id="camufaApiRemember" type="checkbox" checked> Salvar configuração neste dispositivo</label>
       <button type="submit" style="width:100%;padding:12px;border:0;border-radius:8px;background:#e60000;color:white;font-weight:800;font-size:.9rem">Entrar e carregar catálogo</button>
-      <p style="color:#81899a;font-size:.68rem;line-height:1.4;margin:13px 0 0">A configuração é armazenada somente no armazenamento local/sessão deste navegador. O servidor precisa aceitar requisições do domínio onde o app estiver hospedado.</p>
+      <p style="color:#81899a;font-size:.68rem;line-height:1.4;margin:13px 0 0">Aceita endereços XML/XMLTV, inclusive links terminados em .xml. A configuração é armazenada somente no armazenamento local/sessão deste navegador. O servidor precisa aceitar requisições do domínio onde o app estiver hospedado.</p>
       <p id="camufaApiLoginError" style="color:#ff8888;font-size:.78rem;min-height:1em;margin:8px 0 0"></p>
     </form>`;
     document.body.appendChild(overlay);
